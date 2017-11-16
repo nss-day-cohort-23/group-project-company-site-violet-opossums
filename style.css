@@ -34,6 +34,14 @@ footer {
     text-align: center;
     margin-top: 1em;
 }
+
+
+footer small {
+    margin-top: 1em;
+    font-style: italic;
+    display: block;
+}
+
 /**************
 Class Selectors
 **************/
@@ -44,11 +52,22 @@ Class Selectors
 }
 
 /**************
+ID Selectors
+**************/
+
+#social ul {
+    margin-top: 1em;
+}
+#social li {
+    display: inline;
+}
+
+/**************
 Pseudo-Class Selectors
 **************/
 
 /**************
-Clearfix Selectors
+Clearfix
 **************/
 
 /**************
@@ -63,11 +82,34 @@ Media Queries
         flex-direction: row !important;
         justify-content: center;
     }
-    footer li {
-        display: inline;
-    }
     main {
         width: 90%;
         margin: 0 auto;
+    }
+    
+
+    /************
+    Footer
+    ************/
+    footer a {
+        font-size: 1em !important;
+    }
+    footer ul {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    footer small {
+        display: inline;
+        margin-left: 1em;
+    }
+    footer li {
+        display: inline;
+        margin-right: 1em;
+    }
+    #copyright {
+        margin-top: 1em;
+    }
+    #social ul {
+        margin-top: 1em;
     }
 }
