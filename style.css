@@ -99,8 +99,12 @@ Class Selectors
     flex-direction: column;
 }
 
+#posse h1 {
+    text-align: center;
+    margin: 1em;
+}
 #posse .card {
-    background-color: rgb(233, 233, 233);
+    background-color: #e9ebee;
     border-radius: 1em;
     box-shadow: 3px 3px 3px #888888;
     margin-top: 1em;
