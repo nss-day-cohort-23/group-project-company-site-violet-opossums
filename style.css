@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+}
+
+/**************
+Element Selectors
+**************/
+
+header h2 {
+    text-align: center;
+}
+nav li a,
+footer li a {
+    text-decoration: none;
+}
+
+main {
+    margin: 0 0.5rem;
+    margin-top: 1em;
+}
+
+nav ul,
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer li a {
+    font-size: 0.75rem;
+}
+
+nav,
+footer {
+    text-align: center;
+    margin-top: 1em;
+}
+/**************
+Class Selectors
+**************/
+
+.flex-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+/**************
+Pseudo-Class Selectors
+**************/
+
+/**************
+Clearfix Selectors
+**************/
+
+/**************
+Media Queries
+**************/
+
+@media (min-width: 600px){
+    nav li {
+        margin-right: 1em;
+    }
+    nav ul {
+        flex-direction: row !important;
+        justify-content: center;
+    }
+    footer li {
+        display: inline;
+    }
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
