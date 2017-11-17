@@ -84,25 +84,26 @@ var products = [
 
 
 for(i = 0; i<products.length; i++){
+  var product =  document.getElementById('product');
   if(product){
-    product =  document.getElementById('product');
     product.innerHTML += "<div class='card'> " + 
     "<img src='"+ products[i].img+ "'>" +
-  "<p>"+ parseFloat(Math.round(products[i].price *100) /100).toFixed(2)+"</p>" +
+  "<p>"+"$"+ parseFloat(Math.round(products[i].price *100) /100).toFixed(2)+"</p>" +
   "<h4>"+ products[i].name + "</h4>" +  
   "<p class='description'>" + products[i].description + "</p>" +  "</div>";
     }
   }
 
 
-// for(i=0; i<3; i++) {
-// // var fp = products[i]
-// if()
-// var fp = products[Math.floor(Math.random() * products.length)];
-// document.getElementById('featured-products').innerHTML += 
-// "<h4>"+ products[i].name + "</h4>" +  
-// "<p class='price'>"+"$"+ products[i].price +"</p>" +
-// "<p class='description'>" + products[i].description + "</p>" +
-// "<img src='"+
-// products[i].img+ "'" +  "</div>";
-// }
+for(i=0; i<3; i++) {
+  var featured = document.getElementById('featured-products')
+  if(featured) {
+    var fp = products[Math.floor(Math.random() * products.length)];
+    var rPrice = (fp.price *.9)
+    featured.innerHTML += 
+    "<img src='"+ fp.img+ "'>" +
+    "<p>"+"$"+ parseFloat(Math.round(rPrice *100) /100).toFixed(2)+"</p>" +
+    "<h4>"+ fp.name + "</h4>" +  
+    "<p class='description'>" + fp.description + "</p>" +  "</div>";
+  }
+}
