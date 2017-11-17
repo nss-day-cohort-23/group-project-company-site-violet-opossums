@@ -274,7 +274,8 @@ Class Selectors
         padding: 10px 10px 10px 10px;
         text-decoration: none;
         margin: 1rem auto;
-        transform: translate(18rem)
+        width: 100%;
+        /* transform: translate(18rem) */
 }
 
 #job-title-span {
@@ -302,7 +303,6 @@ Class Selectors
     margin: 1rem auto;
     padding: .5rem 1rem;
     border-top: 1px solid grey;
-    line-height: 2rem;
     border-bottom-width: 50%;
 }
 
@@ -509,28 +509,49 @@ Featured Products
     /**************
         jobs.html
         **************/
+    .jobs h1 {
+        padding-left: 30% !important;
+    }
+
+    #flex-card {
+        display: flex;
+    }
+
 
     .job-flex-item li {
-        font-size: 1.4em;
+        /* font-size: 1.4em; */
         display: inline-flex;
+    }
+
+    .job-flex-item   {
+        position: relative;
     }
 
     #jobs .apply-btn {
         margin-top: 2em;
-        transform: translate(66rem, -530%);
-        font-size: 30px;
+        /* transform: translate(66rem, -530%); */
+        /* font-size: 30px; */
         padding: 12px 40px;
         text-decoration: none;
         position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
     }
 
     .job-flex-item h3 {
-        font-size: 2.6em;
+        font-size: 1.5em;
+        width: 75%;
     }
 
     .job-flex-item p {
-        font-size: 1.6em;
+        /* font-size: 1.6em; */
         margin: 1em 0;
+    }
+
+    .jobs-img-bor {
+        width: 25%;
+        margin-top: 1em;
     }
 
    #jobs-mission {
@@ -548,6 +569,7 @@ Featured Products
 
    .jobs-img-bor {
        border: 1px solid grey;
+       width: 75%;
    }
 }
 
