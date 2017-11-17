@@ -83,40 +83,53 @@ var products = [
 ];
 
 
-for(i = 0; i<products.length; i++){
-  var product =  document.getElementById('product');
-  if(product){
-    product.innerHTML += "<div class='card'> " + 
-    "<img src='"+ products[i].img+ "'>" +
-  "<p>"+"$"+ parseFloat(Math.round(products[i].price *100) /100).toFixed(2)+"</p>" +
-  "<h4>"+ products[i].name + "</h4>" +  
-  "<p class='description'>" + products[i].description + "</p>" +  "</div>";
-    }
-  }
+// PRODUCT PAGE ONLY
 
+if ((window.location.href).includes('products')) {
+  var productDiv = document.getElementById('product');
+  var productContent = "";
+  
+  for(i = 0; i<products.length; i++){
+    productContent += getDivContent(products[i], false);
+  }
+  
+  productDiv.innerHTML = productContent;
+}
+// HOME PAGE ONLY
+else {
+  var featProductCount = 3;
   var usedNumbers = [];//Array of items to not repeat on featured items
 
-for(i=0; i<3; i++) {
-  var featured = document.getElementById('featured-products-wrap');
+  var featuredDiv = document.getElementById('featured-products-wrap');
+  var featDivContent = "";
 
-  if(featured) {
+  for(i=0; i<featProductCount; i++) {
+    //Generate random index array.
+    var randomArrayIndex = Math.floor(Math.random() * products.length);
 
-    var randomArrayIndex = Math.floor(Math.random() * products.length);//Generate random index array.
-
-    var fp;//featured product
-    
-    while (usedNumbers.indexOf(randomArrayIndex) > -1) {//Loop until randomArrayIndex is not within usedNumbers array
-      randomArrayIndex = Math.floor(Math.random() * products.length)
+    //Loop until randomArrayIndex is not within usedNumbers array
+    while (usedNumbers.indexOf(randomArrayIndex) > -1) {
+      randomArrayIndex = Math.floor(Math.random() * products.length);
     }
-    fp = products[randomArrayIndex];
+
+    // featProduct = random, for sure not repeated product
+    var featProduct = products[randomArrayIndex];
     usedNumbers.push(randomArrayIndex);
 
-
-    var rPrice = (fp.price *.9)
-    featured.innerHTML += "<div class='card'> " + 
-    "<img src='"+ fp.img+ "'>" +
-    "<p>"+"$"+ parseFloat(Math.round(rPrice *100) /100).toFixed(2)+"</p>" +
-    "<h4>"+ fp.name + "</h4>" +  
-    "<p class='description'>" + fp.description + "</p>" +  "</div></div>";
+    featDivContent += getDivContent(featProduct, true);
   }
+
+  featuredDiv.innerHTML = featDivContent;
+}
+
+function getDivContent(product, isSale) {
+  if (isSale) {
+    product.price *= .9;
+  }
+  var content = "<div class='card'> " + 
+  "<img src='"+ product.img+ "'>" +
+  "<p>"+"$"+ parseFloat(Math.round(product.price *100) /100).toFixed(2)+"</p>" +
+  "<h4>"+ product.name + "</h4>" +  
+  "<p class='description'>" + product.description + "</p>" +  "</div></div>";
+  return content;
 }
