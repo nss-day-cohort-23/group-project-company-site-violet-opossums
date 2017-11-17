@@ -20,30 +20,42 @@ body {
 /**************
 ID Selectors
 **************/
-.flex-product {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+#product h4,
+#product p {
+    text-align: center;
+    line-height: 1.5em;
 }
-#product .card  img {
-  float: left;
-  height: 80%;
-  border-radius: 22%;
-  padding: 1em 2em;
+
+#product h4 {
+    padding-top: 1em;
+}
+
+#food {
+    width: 100%;
 }
 
 #product .card {
-  background-color: #e9ebee;
-  border-radius: 1em;
-  box-shadow: 3px 3px 3px #888888;
-  margin-top: 1em;
-  width: 72%;
-  height: 13%;
-  padding: 2em;
+    width: 75%;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
-.p-section {
-  width: 33%;
+#product .card img {
+    width: 50%;
+    border-radius: 10%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 1em;
+    margin-top: 1em;
+}
+
+#product .card {
+  background-color:#fcfcfc;
+  /* border-radius: 1em; */
+  /* box-shadow: 3px 3px 3px #888888; */
+  margin-bottom: 1em;
+  border-bottom: 1px dotted gray;
 }
 
 #hero {
@@ -65,6 +77,11 @@ ID Selectors
 }
 #hero.subhero {
     padding: 2rem 1rem;
+}
+
+#hero.jobs {
+    background-image: url('img/jobs-hero.jpg');
+    background-position: center 75%;
 }
 
 img {
@@ -297,6 +314,15 @@ Media Queries
 
 @media (min-width: 600px){
     
+    /************
+    Products
+    ************/
+    .flex-product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
     main {
         width: 90%;
         margin: 3rem auto;
