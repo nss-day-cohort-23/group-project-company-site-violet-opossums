@@ -41,6 +41,10 @@ ID Selectors
     line-height: 1.5em;
 }
 
+#product .description {
+    margin-bottom: 1em;
+}
+
 #product h4 {
     padding-top: 1em;
 }
@@ -367,6 +371,7 @@ Media Queries
         width: 30%;
         margin-right: 1em;
         margin-left: 1em;
+        margin-top: auto;
     }
 
     main {
