@@ -16,7 +16,7 @@ body {
     font-family: 'Lato', 'Helvetica', 'Arial', 'Verdana', sans-serif;
     font-weight: 300;
 
-    background-color: #fcfcfc;
+    background-color: #f7f7f7;
 
 }
 blockquote {
@@ -263,29 +263,6 @@ Class Selectors
     transform: translate(-1px, 20%);
 }
 
-#posse h1 {
-    text-align: center;
-    margin: 1em;
-    font-size: 2em;
-}
-#posse .card {
-    background-color: #e9ebee;
-    border-radius: 1em;
-    box-shadow: 3px 3px 3px #888888;
-    margin-top: 1em;
-}
-
-#posse .card img {
-    width: 10rem;
-    border-radius: 50%;
-    float: left;
-    margin-right:  5px;
-    margin-bottom: 2px;
-}
-#posse .card header h3 {
-    text-align: center;
-    padding: 0.5em;
-}
 
 
 #jobs .apply-btn {
@@ -412,19 +389,20 @@ Media Queries
         justify-content: space-between;
     }
     #posse .card {
-        width: 30%;
-        margin-right: 1em;
+        width: 48%;
+        padding: 1rem;
+        box-sizing: border-box;
     }
-    #posse .card  img {
-        float: left;
+    #posse .card .body {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 
     #posse .card h3 {
         font-size: 1.25em; 
     }
-    #posse .card main {
-        margin-top: 1em;
-    }
+    
 
     /************
     Header
@@ -554,4 +532,57 @@ about.html
 }
 #about-history p {
     margin: 1rem 0;
+}
+
+#posse .card .body {
+    flex-direction: column;
+}
+#posse .card .body section {
+    flex-grow: 0;
+}
+#posse h1 {
+    text-align: center;
+    margin: 1em;
+    font-size: 2em;
+}
+#posse .card {
+    background: #fff;
+    border: 1px solid #e9ebee;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+#posse .card img {
+    max-width: 100%;
+    width: 300px;
+    border-radius: 50%;
+    float: left;
+    margin-right:  1rem;    
+    margin-bottom: 1rem;
+}
+#posse .card h4 {
+    margin-bottom: 1rem;
+}
+#posse .card header {
+    text-align: center;
+    padding: 0.5rem 0 1rem 0;
+}
+#posse .card address {
+    clear: both;
+}
+@media (min-width: 750px){
+    #posse .card .body {
+        flex-direction: row;
+        font-size: 1.2em;
+    }
+    #posse .card section {
+        width: 70%;
+    }
+    #posse .card section.header {
+        width: 30%;
+        padding-right: 1rem;
+    }
+    #posse .card address {
+        font-size: 1.1em;
+    }
 }
