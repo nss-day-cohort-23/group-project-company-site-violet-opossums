@@ -84,21 +84,15 @@ var products = [
 
 
 for(i = 0; i<products.length; i++){
-  var elem; 
-  // if(food){
-  if (i<5){
-    elem =  document.getElementById('food');
-  }else if(i<8){
-    elem = document.getElementById('habitation');
-  }else{
-    elem = document.getElementById('accessories'); 
-  };
-  elem.innerHTML += "<div class='card'> " + 
+  if(product){
+    product =  document.getElementById('product');
+    product.innerHTML += "<div class='card'> " + 
   "<img src='"+ products[i].img+ "'" +
   "<p class='price'>"+"$"+ parseFloat(Math.round(products[i].price *100) /100).toFixed(2) +"</p>" +
   "<h4>"+ products[i].name + "</h4>" +  
   "<p class='description'>" + products[i].description + "</p>" +
   +  "</div>";
+    }
   };
 
 
