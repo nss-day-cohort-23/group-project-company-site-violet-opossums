@@ -67,6 +67,11 @@ ID Selectors
     padding: 2rem 1rem;
 }
 
+#hero.jobs {
+    background-image: url('img/jobs-hero.jpg');
+    background-position: center 75%;
+}
+
 img {
     max-width: 100%;
 }
