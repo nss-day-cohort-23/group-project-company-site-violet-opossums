@@ -84,26 +84,31 @@ var products = [
 
 
 for(i = 0; i<5; i++){
-  document.getElementById('food').innerHTML += '<div> ' + 
-  products[i].name + ', ' + 
-  products[i].description + ', ' +
-  '$'+ products[i].price  +"<img src='"+
-  products[i].img+ "'" +  '</div>';
+  document.getElementById('food').innerHTML += "<div class='card'> " + 
+  "<h4>"+ products[i].name + "</h4>" +  
+  "<p class='price'>"+"$"+ products[i].price +"</p>" +
+  "<p class='description'>" + products[i].description + "</p>" +
+  "<img src='"+
+  products[i].img+ "'" +  "</div>";
 
 }
 for(i = 5; i<8; i++){
-  document.getElementById('habitation').innerHTML += '<div> ' + 
-  products[i].name + ', ' + 
-  products[i].description + ', ' +
-  '$'+ products[i].price  +"<img src='"+
-  products[i].img+ "'" +  '</div>';
+  document.getElementById('habitation').innerHTML += "<div class='card'> " + 
+  "<h4>"+ products[i].name + "</h4>" +  
+  "<p class='price'>"+"$"+ products[i].price +"</p>" +
+  "<p class='description'>" + products[i].description + "</p>" +
+  "<img src='"+
+  products[i].img+ "'" +  "</div>";
 
 }
 for(i = 8; i<products.length; i++){
-  document.getElementById('accessories').innerHTML += '<div> ' + 
-  products[i].name + ', ' + 
-  products[i].description + ', ' +
-  '$'+ products[i].price  +"<img src='"+
-  products[i].img+ "'" +  '</div>';
+  document.getElementById('accessories').innerHTML += "<div class='card'> " + 
+
+  "<h4>"+ products[i].name + "</h4>" +  
+  "<p class='price'>"+"$"+ products[i].price +"</p>" +
+  "<p class='description'>" + products[i].description + "</p>" +
+  "<img src='"+
+  products[i].img+ "'" +  "</div>";
+
 
 }

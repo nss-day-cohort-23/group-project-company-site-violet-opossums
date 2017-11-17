@@ -5,6 +5,31 @@
 /**************
 Element Selectors
 **************/
+.flex-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#product .card  img {
+  float: left;
+  height: 80%;
+  border-radius: 22%;
+  padding: 1em 2em;
+}
+
+#product .card {
+  background-color: #e9ebee;
+  border-radius: 1em;
+  box-shadow: 3px 3px 3px #888888;
+  margin-top: 1em;
+  width: 72%;
+  height: 13%;
+  padding: 2em;
+}
+
+.p-section {
+  width: 33%;
+}
 
 header h2 {
     text-align: center;
