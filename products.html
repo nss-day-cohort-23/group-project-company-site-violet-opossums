@@ -4,47 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AAOSS Products</title> <!--American Australian (O)pposom Suppies Supply-->
+    <title>AA(O)SS Home</title> <!--American Australian (O)pposum Suppies Supply-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <script type="text/javascript"  src="js/products.js" async></script>
-    
 </head>
 <body>
     <header>
-        <h2>AA(O)SS</h2>
         <nav>
-            <div id="logo">
-
-            </div>
+            <a id="branding" href="index.html">
+                <img id="logo" src="img/aaoss.png">
+                <h2>AA(O)SS</h2>
+            </a>
             <ul class="flex-nav">
-                <li><a href="index.html">Home</a></li>    
-                <li><a href="#">Posse</a></li>  
-                <li><a href="#">About</a></li> 
-                <li><a href="products.html">Products</a></li>   
-                <li><a href="#">Jobs</a></li>   
-                <li><a href="#">Featured (O)possum</a></li>         
-            </ul>     
+                <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>    
+                <li><a href="posse.html"><i class="material-icons">person</i>Posse</a></li>  
+                <li><a href="about.html"><i class="material-icons">language</i>About</a></li> 
+                <li><a href="products.html"><i class="material-icons">add_shopping_cart</i>Products</a></li>   
+                <li><a href="jobs.html"><i class="material-icons">work</i>Jobs</a></li>   
+                <li><a href="featured.html"><i class="material-icons">pets</i>Featured (O)possum</a></li>         
+            </ul> 
         </nav>
     </header>
-    <main>
-      <section id='product'>
-        <div class='flex-product'>
-          <div id='food' class='p-section'>
-            <h3>Foods for your [O]possom</h3>
-          </div>
-          <div id='habitation' class='p-section'>
-            <h3>Premium Habitation for your [O]possom</h3>
-          </div>
-          <div id='accessories' class='p-section'>
-              <h3>Fun Toys and Accessories for your [O]possom</h3>
-          </div>
-        </div>
-      </section>
-    </main> 
-    
+    <div id="container">
+        <main>
+            <section id='product'>
+                <div class='flex-product'>
+                  <div id='food' class='p-section'>
+                    <h3>Foods for your [O]possom</h3>
+                  </div>
+                  <div id='habitation' class='p-section'>
+                    <h3>Premium Habitation for your [O]possom</h3>
+                  </div>
+                  <div id='accessories' class='p-section'>
+                      <h3>Fun Toys and Accessories for your [O]possom</h3>
+                  </div>
+                </div>
+              </section>
+        </main> 
+    </div>
     <footer>
         <hr>
-
         <ul>
             <li><a href="#">Home</a></li>    
             <li><a href="#">Posse</a></li>  
