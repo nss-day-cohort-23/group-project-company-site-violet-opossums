@@ -14,6 +14,7 @@ ID Selectors
     padding: 10rem 1rem 2rem 1rem;
     color: white;
 }
+
 #hero h1 {
     font-weight: 100;
     text-align: center;
@@ -28,12 +29,12 @@ ID Selectors
         font-size: 2rem;
     }
 
-    #hero {
+    #hero, #jobs-hero {
         margin-top: 84px !important;
     }
 }
 @media (min-width: 750px){
-    #hero {
+    #hero, #jobs-hero {
         background-position: center;
         background-size: cover;
         padding: 4rem 2rem;
@@ -45,7 +46,7 @@ ID Selectors
     }
 }
 @media (min-width: 1200px) {
-    #hero {
+    #hero, #jobs-hero {
         padding: 8rem 2rem;
     }
     #hero h1 {
@@ -147,6 +148,50 @@ Class Selectors
 #posse .card header h3 {
     text-align: center;
     padding: 0.5em;
+}
+
+#jobs .apply-btn {
+        background: #b21cc9;
+        border-radius: 15px;
+        color: white;
+        font-size: 15px;
+        padding: 10px 10px 10px 10px;
+        text-decoration: none;
+        margin: 1rem auto;
+        transform: translate(18rem)
+}
+
+#job-title-span {
+    background-color: #e9ebee;
+    width: 110%; 
+    margin-left: -5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-size: 20px;
+    height: 5rem;
+}
+
+#job-title-span h3 {
+    padding-top: 1%;
+    font-size: 15px; 
+}
+
+.job-flex-item {
+    margin: 1rem auto;
+    background-color: #e9ebee;
+    padding: 1rem 1rem;
+    border-radius: 5%;
+}
+
+#jobs-hero {
+    background-image: url('img/jobs-hero.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10rem 1rem 2rem 1rem;
+    width: 110%;
+    margin-left: -5%;
+    color: white;
 }
 
 /**************
