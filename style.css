@@ -15,6 +15,7 @@ a:hover {
 body {
     font-family: 'Lato', 'Helvetica', 'Arial', 'Verdana', sans-serif;
     font-weight: 300;
+    background-color: #fcfcfc;
 }
 /**************
 ID Selectors
@@ -278,6 +279,7 @@ Media Queries
     }
     #copyright {
         margin-top: 1em;
+        margin-bottom: 1em;
     }
     #social ul {
         margin-top: 1em;
@@ -308,6 +310,7 @@ about.html
 #about-mission p {
     margin-left: 0.5rem; 
     font-style: italic;
+    text-align: center; 
 }
 
 #about-history,
