@@ -267,22 +267,29 @@ Class Selectors
     font-size: 15px; 
 }
 
-.job-flex-item {
-    margin: 1rem auto;
+#jobs-mission {
     background-color: #e9ebee;
-    padding: 1rem 1rem;
-    border-radius: 5%;
+    padding: 1em;
+    text-align: center;
 }
 
-#jobs-hero {
-    background-image: url('img/jobs-hero.jpg');
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 10rem 1rem 2rem 1rem;
-    width: 110%;
-    margin-left: -5%;
-    color: white;
+.job-flex-item {
+    margin: 1rem auto;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid grey;
+    line-height: 2rem;
+    border-bottom-width: 50%;
+}
+
+.job-flex-item h3 {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.jobs-strong {
+    font-weight: 900;
+    padding: .5em;
 }
 
 /**************
@@ -427,6 +434,34 @@ Media Queries
         text-align: center;
     }
 
+    /**************
+        jobs.html
+        **************/
+
+    .job-flex-item li {
+        font-size: 1.8em;
+    }
+
+    #jobs .apply-btn {
+        transform: translate(32rem);
+        font-size: 30px;
+        padding: 12px 40px;
+        text-decoration: none;
+        margin: 1rem auto;
+    }
+
+    .job-flex-item h3 {
+        font-size: 3.2em;
+    }
+
+    .job-flex-item p {
+        font-size: 2em;
+        margin: 1em 0;
+    }
+
+   #jobs-mission {
+       font-size: 2em;
+   }
 }
 
 /**************
