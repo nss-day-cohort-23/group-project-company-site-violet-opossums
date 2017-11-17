@@ -215,6 +215,10 @@ footer li a {
 footer {
     text-align: center;
     margin-top: 1em;
+    background: #e9ebee;
+    margin: 0;
+    border: none;
+    padding: 1rem;
 }
 
 
@@ -329,15 +333,11 @@ ID Selectors
 **************/
 
 #social ul {
-    margin-top: 1em;
+    margin: 0;
 }
 #social li {
     display: inline;
 
-}
-
-#copyright {
-    margin-bottom: 1em;
 }
 
 /**************
@@ -456,12 +456,6 @@ Media Queries
         margin-right: 1em;
     }
     #copyright {
-        margin-top: 1em;
-    }
-    #social ul {
-        margin-bottom: 1em !important;
-    }
-    #social ul {
         margin-top: 1em;
     }
 
