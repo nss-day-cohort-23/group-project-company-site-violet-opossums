@@ -87,13 +87,12 @@ for(i = 0; i<products.length; i++){
   if(product){
     product =  document.getElementById('product');
     product.innerHTML += "<div class='card'> " + 
-  "<img src='"+ products[i].img+ "'" +
-  "<p class='price'>"+"$"+ parseFloat(Math.round(products[i].price *100) /100).toFixed(2) +"</p>" +
+    "<img src='"+ products[i].img+ "'>" +
+  "<p>"+ parseFloat(Math.round(products[i].price *100) /100).toFixed(2)+"</p>" +
   "<h4>"+ products[i].name + "</h4>" +  
-  "<p class='description'>" + products[i].description + "</p>" +
-  +  "</div>";
+  "<p class='description'>" + products[i].description + "</p>" +  "</div>";
     }
-  };
+  }
 
 
 // for(i=0; i<3; i++) {
