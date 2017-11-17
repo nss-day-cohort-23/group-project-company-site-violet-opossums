@@ -363,8 +363,51 @@ Clearfix
 Media Queries
 **************/
 
+
+/************
+Featured Products
+************/
+
+#featured-products h3 {
+    text-align: center;
+}
+#featured-products-wrap img {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+}
+#featured-products-wrap .card{
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px dotted black;
+    width: 80%;
+    /* margin: 1em auto; */
+    padding-bottom: 1em;
+}
+
 @media (min-width: 600px){
     
+    /************
+    Featured Products
+    ************/
+    #featured-products h3 {
+        text-align: center;
+    }
+    #featured-products-wrap {
+        margin-top:  1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #featured-products-wrap .card  {
+        width: 30%;
+        margin: 0;
+        border-bottom: 0px;
+    }
+    #featured-products-wrap img {
+        margin-top: auto;
+    }
 
     /************
     Products
@@ -555,3 +598,5 @@ about.html
 #about-history p {
     margin: 1rem 0;
 }
+
+
