@@ -83,32 +83,33 @@ var products = [
 ];
 
 
-for(i = 0; i<5; i++){
-  document.getElementById('food').innerHTML += "<div class='card'> " + 
+for(i = 0; i<products.length; i++){
+  var elem; 
+  // if(food){
+  if (i<5){
+    elem =  document.getElementById('food');
+  }else if(i<8){
+    elem = document.getElementById('habitation');
+  }else{
+    elem = document.getElementById('accessories'); 
+  };
+  elem.innerHTML += "<div class='card'> " + 
+  "<img src='"+ products[i].img+ "'" +
+  "<p class='price'>"+"$"+ parseFloat(Math.round(products[i].price *100) /100).toFixed(2) +"</p>" +
   "<h4>"+ products[i].name + "</h4>" +  
-  "<p class='price'>"+"$"+ products[i].price +"</p>" +
   "<p class='description'>" + products[i].description + "</p>" +
-  "<img src='"+
-  products[i].img+ "'" +  "</div>";
-
-}
-for(i = 5; i<8; i++){
-  document.getElementById('habitation').innerHTML += "<div class='card'> " + 
-  "<h4>"+ products[i].name + "</h4>" +  
-  "<p class='price'>"+"$"+ products[i].price +"</p>" +
-  "<p class='description'>" + products[i].description + "</p>" +
-  "<img src='"+
-  products[i].img+ "'" +  "</div>";
-
-}
-for(i = 8; i<products.length; i++){
-  document.getElementById('accessories').innerHTML += "<div class='card'> " + 
-
-  "<h4>"+ products[i].name + "</h4>" +  
-  "<p class='price'>"+"$"+ products[i].price +"</p>" +
-  "<p class='description'>" + products[i].description + "</p>" +
-  "<img src='"+
-  products[i].img+ "'" +  "</div>";
+  +  "</div>";
+  };
 
 
-}
+// for(i=0; i<3; i++) {
+// // var fp = products[i]
+// if()
+// var fp = products[Math.floor(Math.random() * products.length)];
+// document.getElementById('featured-products').innerHTML += 
+// "<h4>"+ products[i].name + "</h4>" +  
+// "<p class='price'>"+"$"+ products[i].price +"</p>" +
+// "<p class='description'>" + products[i].description + "</p>" +
+// "<img src='"+
+// products[i].img+ "'" +  "</div>";
+// }
