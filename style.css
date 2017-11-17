@@ -28,7 +28,7 @@ ID Selectors
         font-size: 2rem;
     }
 
-    #hero {
+    #container {
         margin-top: 84px !important;
     }
 }
@@ -114,6 +114,18 @@ footer small {
 Class Selectors
 **************/
 
+.lead {
+    font-size: 1.2em;
+    width: 80%;
+    margin: auto;
+}
+.lead p {
+    margin: 1rem 0;
+}
+.lead blockquote {
+    margin: 2rem;
+    font-size: 1.2em;
+}
 
 .flex-nav {
     display: flex;
@@ -176,7 +188,7 @@ Media Queries
     
     main {
         width: 90%;
-        margin: 0 auto;
+        margin: 3rem auto;
     }
 
 
