@@ -102,6 +102,7 @@ Class Selectors
 #posse h1 {
     text-align: center;
     margin: 1em;
+    font-size: 2em;
 }
 #posse .card {
     background-color: #e9ebee;
@@ -111,10 +112,11 @@ Class Selectors
 }
 
 #posse .card img {
-    width: 50%;
+    width: 10rem;
     border-radius: 50%;
     float: left;
-    margin: 5px;
+    margin-right:  5px;
+    margin-bottom: 2px;
 }
 #posse .card header h3 {
     text-align: center;
@@ -168,6 +170,7 @@ Media Queries
     .flex-posse {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     #posse .card {
         width: 30%;
