@@ -19,6 +19,18 @@ body {
     background-color: #fcfcfc;
 
 }
+blockquote {
+    padding: 0 2rem;
+    margin: 2rem 0;
+    font-size: 1.2em;
+    border-left: 4px solid #bb25ad;
+}
+cite {
+    text-align: right;
+    display: block;
+    font-size: .9em;
+    margin-top: 1rem;
+}
 /**************
 ID Selectors
 **************/
@@ -223,12 +235,6 @@ Class Selectors
 }
 .lead p {
     margin: 1rem 0;
-}
-.lead blockquote {
-    padding: 0 2rem;
-    margin: 2rem 0;
-    font-size: 1.2em;
-    border-left: 4px solid #bb25ad;
 }
 
 .flex-nav {
@@ -505,8 +511,13 @@ about.html
     margin: .75em;
 }
 
-#about-history p {
-    text-indent: 25px;
+#about-history {
+    margin: 0 10%;
+    font-size: 1.2rem;
+    width: 80%;
     text-align: justify;
     text-justify: inter-word;
+}
+#about-history p {
+    margin: 1rem 0;
 }
