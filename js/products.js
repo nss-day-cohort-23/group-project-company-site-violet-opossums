@@ -94,16 +94,29 @@ for(i = 0; i<products.length; i++){
     }
   }
 
+  var usedNumbers = [];//Array of items to not repeat on featured items
 
 for(i=0; i<3; i++) {
-  var featured = document.getElementById('featured-products')
+  var featured = document.getElementById('featured-products-wrap');
+
   if(featured) {
-    var fp = products[Math.floor(Math.random() * products.length)];
+
+    var randomArrayIndex = Math.floor(Math.random() * products.length);//Generate random index array.
+
+    var fp;//featured product
+    
+    while (usedNumbers.indexOf(randomArrayIndex) > -1) {//Loop until randomArrayIndex is not within usedNumbers array
+      randomArrayIndex = Math.floor(Math.random() * products.length)
+    }
+    fp = products[randomArrayIndex];
+    usedNumbers.push(randomArrayIndex);
+
+
     var rPrice = (fp.price *.9)
-    featured.innerHTML += 
+    featured.innerHTML += "<div class='card'> " + 
     "<img src='"+ fp.img+ "'>" +
     "<p>"+"$"+ parseFloat(Math.round(rPrice *100) /100).toFixed(2)+"</p>" +
     "<h4>"+ fp.name + "</h4>" +  
-    "<p class='description'>" + fp.description + "</p>" +  "</div>";
+    "<p class='description'>" + fp.description + "</p>" +  "</div></div>";
   }
 }
