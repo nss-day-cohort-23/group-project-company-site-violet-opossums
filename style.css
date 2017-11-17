@@ -282,4 +282,49 @@ Media Queries
     #social ul {
         margin-top: 1em;
     }
+
+    /**************
+    about.html
+    **************/
+    #about-mission p {
+        text-align: center;
+    }
+
+}
+
+/**************
+about.html
+**************/
+
+#about-mission {
+    background-color: #e9ebee;
+    padding-bottom: 1em;
+}
+
+#about-mission h2 {
+    padding-top: 0.5em;
+}
+
+#about-mission p {
+    margin-left: 0.5rem; 
+    font-style: italic;
+}
+
+#about-history,
+#about-mission {
+    margin-top: 2em;
+}
+
+#about-history h1,
+#about-history h3,
+#about-mission h2,
+#about-history h4 {
+    text-align: center;
+    margin: .75em;
+}
+
+#about-history p {
+    text-indent: 25px;
+    text-align: justify;
+    text-justify: inter-word;
 }
