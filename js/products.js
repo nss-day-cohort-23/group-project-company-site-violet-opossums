@@ -39,7 +39,7 @@ var products = [
   },
   {
     name: '4-Level Mansion',
-    description: 'CRIKEY. This four story mansion will make all the other (O)possoms on the block beyond jealous. Give the Number 1 (O)possom in your life the castle he truly',
+    description: 'CRIKEY. This four story mansion will make all the other (O)possoms on the block beyond jealous. Give the Number 1 (O)possom in your life the castle he truly deserves',
     price: 219.95,
     img: img_path+'4levelmansion.jpg'
   },
